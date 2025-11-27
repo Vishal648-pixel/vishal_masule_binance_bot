@@ -1,0 +1,42 @@
+# setup
+
+🔧 Setup Guide (with venv)
+1. Go to Project Root
+Terminal khol ke project folder me jao:
+
+cd project_root
+2. Create Virtual Environment
+
+python -m venv venv
+👉 Ye ek venv/ folder banayega jisme tumhare project ke liye alag Python environment hoga.
+
+3. Activate venv
+Windows (PowerShell):
+
+venv\Scripts\activate
+Linux/macOS:
+
+source venv/bin/activate
+Terminal prompt ke aage (venv) dikhega → iska matlab environment active hai.
+
+4. Install Dependencies
+Agar requirements.txt file hai to:
+
+pip install -r requirements.txt
+Agar nahi hai, to manually install karo (common libraries):
+
+pip install requests pandas numpy
+5. Run Your Scripts
+Ab tum apne bot ke alag‑alag modules run kar sakte ho:
+
+Market orders:
+
+python src/market_orders.py
+Limit orders:
+
+python src/limit_orders.py
+OCO strategy:
+
+python src/advanced/oco.py
+TWAP strategy:
+python src/advanced/twap.py
