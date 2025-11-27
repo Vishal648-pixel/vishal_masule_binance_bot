@@ -1,56 +1,34 @@
 # vishal_masule_binance_bot
 
-🛠 Setup with venv
-1. Create Virtual Environment
-Go to your project root (where src/, README.md etc. are):
+Project: Trading Bot Orders
+📌 Overview
+This project is a Python-based trading bot framework that demonstrates different order execution strategies:
 
-bash
-cd project_root
-python -m venv venv
-👉 This will create a folder named venv/ with its own Python + pip.
+Market Orders – immediate execution at current price
 
-2. Activate venv
-Windows (PowerShell):
+Limit Orders – execution at a specified price
 
-bash
-venv\Scripts\activate
-Linux / macOS (bash/zsh):
+OCO (One-Cancels-the-Other) – advanced conditional order strategy
 
-bash
-source venv/bin/activate
-After activation, you’ll see (venv) before your terminal prompt.
+TWAP (Time-Weighted Average Price) – algorithmic execution strategy
 
-3. Install Dependencies
-If you have a requirements.txt (check README.md), run:
+It includes logging, reporting, and modular source code for easy extension.
 
-bash
-pip install -r requirements.txt
-If not, manually install needed packages (example):
+📂 Project Structure
+Code
+project_root/
+│
+├── src/
+│   ├── market_orders.py      # Market order logic
+│   ├── limit_orders.py       # Limit order logic
+│   ├── advanced/
+│   │   ├── oco.py            # OCO order logic
+│   │   └── twap.py           # TWAP strategy
+│
+├── bot.log                   # Logs (API calls, errors, executions)
+├── report.pdf                # Analysis (screenshots, explanations)
+└── README.md                 # Setup, dependencies, usage
 
-bash
-pip install requests pandas numpy
-4. Run Your Files
-Now you can run any script inside src/:
-
-Market orders:
-
-bash
-python src/market_orders.py
-Limit orders:
-
-bash
-python src/limit_orders.py
-Advanced strategies:
-
-bash
-python src/advanced/oco.py
-python src/advanced/twap.py
-Logs will go into bot.log, and you can check them live:
-
-bash
-tail -f bot.log
-5. Deactivate venv
-When you’re done:
 
 bash
 deactivate
