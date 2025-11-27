@@ -30,5 +30,6 @@ project_root/
 └── README.md                 # Setup, dependencies, usage
 
 
-bash
 deactivate
+
+Note-For setup read setup.txt file
